@@ -4,11 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio - Dangelo Cortez</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1>Dangelo Cortez</h1>
-    <p>¡Bienvenido a mi portafolio web! Estoy aprendiendo a desarrollar páginas web desde cero.</p>
+    <!-- Encabezado con Navegación Semántica -->
+    <header class="site-header">
+        <div class="header-container">
+            <h1 class="logo">Dangelo Cortez</h1>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#trabajos">Trabajos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+
+        <!-- Sección 1: Presentación / Sobre mí -->
+        <section id="sobre-mi" class="section sobre-mi">
+            <div class="section-container">
+                <h2>Sobre mí</h2>
+                <div class="bio-content">
+                    <p>¡Hola! Soy <strong>Dangelo Cortez</strong>, estudiante de Bachiller e ingenieria en informatica y desarrollador web en formación, actualmente tengo 18 años y me apasiona el tema de desarrollo software, y todo lo que tiene que ver con ciberseguridad. Actualmente me encuentro aprendiendo las bases fundamentales de desarrollo web con HTML, CSS y JavaScript.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 2: Trabajos o Prácticas del Semestre -->
+        <section id="trabajos" class="section trabajos">
+            <div class="section-container">
+                <h2>Trabajos del Semestre</h2>
+                <div class="projects-grid">
+                    
+                    <article class="project-card">
+                        <h3>Proyecto 1: Mi Primer Portafolio</h3>
+                        <p>Construcción de un sitio web personal utilizando etiquetas semánticas de HTML5, estilos responsivos con CSS3 y publicación en GitHub Pages.</p>
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">Git</span>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Proyecto 2: Práctica de Layouts</h3>
+                        <p>Diseño de maquetas web utilizando Flexbox y CSS Grid para asegurar compatibilidad en dispositivos móviles y de escritorio.</p>
+                        <span class="tech-tag">Flexbox</span>
+                        <span class="tech-tag">CSS Grid</span>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Proyecto 3: Ejercicios de Lógica</h3>
+                        <p>Resolución de problemas de programación inicial enfocados en algoritmos básicos y estructuras de control.</p>
+                        <span class="tech-tag">Lógica</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 3: Contacto -->
+        <section id="contacto" class="section contacto">
+            <div class="section-container">
+                <h2>Contacto</h2>
+                <p>¿Tienes alguna consulta o propuesta? Envíame un mensaje:</p>
+                
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de Página Semántico -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Dangelo Cortez. Todos los derechos reservados.</p>
+        <p>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a> | 
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </p>
+    </footer>
 
 </body>
 </html>
